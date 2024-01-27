@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="perfil">
+            <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="perfil-img">
+            <h1>Luis Javier Castillo Rabanal</h1>
+            <h2>Desarrollador Full Stack</h2>
+        </div>
+        <nav class="nav">
+            <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+            <a href="#experiencia" class="nav-link">Experiencia</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="sobre-mi" class="seccion">
+        <h2>Sobre mí</h2>
+        <p>Desarrollador con 5 años de experiencia en creación de aplicaciones web...</p>
+    </section>
+
+    <section id="experiencia" class="seccion">
+        <h2>Experiencia</h2>
+        <div class="experiencia-item">
+            <h3>Desarrollador Frontend en XYZ Corp</h3>
+            <p class="fecha">2020-2023</p>
+            <ul>
+                <li>Implementación de interfaces con React</li>
+                <li>Optimización de rendimiento web</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contacto" class="seccion">
+        <h2>Contacto</h2>
+        <form id="form-contacto" class="contacto-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
