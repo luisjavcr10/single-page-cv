@@ -3,49 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Profesional</title>
+    <title>Portafolio Moderno</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="perfil">
-            <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="perfil-img">
-            <h1>Luis Javier Castillo Rabanal</h1>
-            <h2>Desarrollador Full Stack</h2>
-        </div>
-        <nav class="nav">
-            <a href="#sobre-mi" class="nav-link">Sobre mí</a>
-            <a href="#experiencia" class="nav-link">Experiencia</a>
-            <a href="#contacto" class="nav-link">Contacto</a>
-        </nav>
-    </header>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="perfil">
+                <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="perfil-img">
+                <h1>Luis Javier Castillo Rabanal</h1>
+                <h2>Full Stack Developer</h2>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <nav class="nav-vertical">
+                <a href="#sobre-mi" class="nav-link"><i class="fas fa-user"></i> Sobre mí</a>
+                <a href="#experiencia" class="nav-link"><i class="fas fa-briefcase"></i> Experiencia</a>
+                <a href="#habilidades" class="nav-link"><i class="fas fa-code"></i> Habilidades</a>
+                <a href="#educacion" class="nav-link"><i class="fas fa-graduation-cap"></i> Educación</a>
+                <a href="#proyectos" class="nav-link"><i class="fas fa-project-diagram"></i> Proyectos</a>
+                <a href="#contacto" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a>
+            </nav>
+        </aside>
 
-    <section id="sobre-mi" class="seccion">
-        <h2>Sobre mí</h2>
-        <p>Desarrollador con 5 años de experiencia en creación de aplicaciones web...</p>
-    </section>
+        <!-- Contenido principal -->
+        <main class="content">
+            <!-- Sección Sobre mí -->
+            <section id="sobre-mi" class="seccion card">
+                <h2><i class="fas fa-user-tie"></i> Sobre mí</h2>
+                <div class="sobre-mi-content">
+                    <p>Desarrollador full stack con 5+ años de experiencia en creación de soluciones web escalables. Especializado en arquitecturas modernas con JavaScript (React/Node.js) y apasionado por el desarrollo de interfaces intuitivas.</p>
+                    <div class="highlight-box">
+                        <h3>Logros destacados:</h3>
+                        <ul>
+                            <li>Lideré el desarrollo de una plataforma SaaS con 50k+ usuarios</li>
+                            <li>Optimización de rendimiento reduciendo tiempos de carga en 60%</li>
+                            <li>Implementación de sistema de diseño accesible WCAG 2.1 AA</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-    <section id="experiencia" class="seccion">
-        <h2>Experiencia</h2>
-        <div class="experiencia-item">
-            <h3>Desarrollador Frontend en XYZ Corp</h3>
-            <p class="fecha">2020-2023</p>
-            <ul>
-                <li>Implementación de interfaces con React</li>
-                <li>Optimización de rendimiento web</li>
-            </ul>
-        </div>
-    </section>
+            <!-- Sección Experiencia -->
+            <section id="experiencia" class="seccion card">
+                <h2><i class="fas fa-briefcase"></i> Experiencia Profesional</h2>
+                
+                <div class="experiencia-item">
+                    <h3>Tech Lead Frontend · XYZ Corp</h3>
+                    <p class="fecha">2022 - Presente</p>
+                    <ul class="responsabilidades">
+                        <li>Dirigir equipo de 5 desarrolladores frontend</li>
+                        <li>Arquitectura de micro-frontends con Module Federation</li>
+                        <li>Implementación de sistema de testing E2E con Cypress</li>
+                    </ul>
+                </div>
 
-    <section id="contacto" class="seccion">
-        <h2>Contacto</h2>
-        <form id="form-contacto" class="contacto-form">
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mensaje" rows="5" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+                <div class="experiencia-item">
+                    <h3>Senior Frontend Developer · ABC StartUp</h3>
+                    <p class="fecha">2020 - 2022</p>
+                    <ul class="responsabilidades">
+                        <li>Desarrollo de plataforma core con React/Redux</li>
+                        <li>Integración con APIs GraphQL</li>
+                        <li>Mentoría de desarrolladores junior</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Sección Habilidades -->
+            <section id="habilidades" class="seccion card">
+                <h2><i class="fas fa-code"></i> Habilidades Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-badges">
+                            <span class="badge">React</span>
+                            <span class="badge">TypeScript</span>
+                            <span class="badge">Redux</span>
+                            <span class="badge">Webpack</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-badges">
+                            <span class="badge">Node.js</span>
+                            <span class="badge">Express</span>
+                            <span class="badge">GraphQL</span>
+                            <span class="badge">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Educación -->
+            <section id="educacion" class="seccion card">
+                <h2><i class="fas fa-graduation-cap"></i> Formación Académica</h2>
+                
+                <div class="educacion-item">
+                    <h3>Máster en Ingeniería de Software · Universidad XYZ</h3>
+                    <p class="fecha">2018 - 2020</p>
+                    <ul>
+                        <li>Tesis: Optimización de rendimiento en SPAs</li>
+                        <li>Promoción de excelencia académica</li>
+                    </ul>
+                </div>
+
+                <div class="educacion-item">
+                    <h3>Certificación AWS Developer</h3>
+                    <p class="fecha">2021</p>
+                    <ul>
+                        <li>Especialización en serverless architectures</li>
+                        <li>Implementación de soluciones cloud-native</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Sección Proyectos -->
+            <section id="proyectos" class="seccion card">
+                <h2><i class="fas fa-project-diagram"></i> Proyectos Destacados</h2>
+                
+                <div class="proyecto-grid">
+                    <div class="proyecto-card">
+                        <div class="proyecto-header">
+                            <h3>E-commerce Platform</h3>
+                            <div class="tech-stack">
+                                <span class="badge">React</span>
+                                <span class="badge">Node.js</span>
+                            </div>
+                        </div>
+                        <p>Plataforma de ventas B2B con sistema de gestión de inventario integrado</p>
+                    </div>
+
+                    <div class="proyecto-card">
+                        <div class="proyecto-header">
+                            <h3>Analytics Dashboard</h3>
+                            <div class="tech-stack">
+                                <span class="badge">D3.js</span>
+                                <span class="badge">Express</span>
+                            </div>
+                        </div>
+                        <p>Sistema de visualización de datos en tiempo real con WebSockets</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Contacto -->
+            <section id="contacto" class="seccion card">
+                <h2><i class="fas fa-envelope"></i> Contacto</h2>
+                <form id="form-contacto" class="contacto-form">
+                    <div class="form-grid">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Teléfono" pattern="[0-9]{9}">
+                        <select required>
+                            <option value="">Seleccione motivo</option>
+                            <option>Oferta laboral</option>
+                            <option>Consulta técnica</option>
+                            <option>Colaboración</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="Mensaje" rows="6" required></textarea>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                </form>
+            </section>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
