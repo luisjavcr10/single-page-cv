@@ -308,3 +308,68 @@ body {
         padding: 0.8rem 1.5rem;
     }
 }
+
+/* Estilos dark mode */
+.dark-mode {
+    --color-primario: #1a1a1a;
+    --color-secundario: #4CAF50;
+    --color-fondo: #2d2d2d;
+    color: #e0e0e0;
+}
+
+.dark-mode .card {
+    background: #333;
+}
+
+/* Animaciones */
+@keyframes reveal {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.experiencia-item {
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.experiencia-item.visible {
+    opacity: 1;
+    animation: reveal 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Theme toggle */
+#theme-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background: var(--color-secundario);
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1000;
+}
+
+/* Progress bars */
+.skill-progress {
+    height: 8px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.skill-progress::after {
+    content: '';
+    display: block;
+    height: 100%;
+    background: var(--color-secundario);
+    transition: width 1s ease;
+}
+
+/* Efecto tarjetas */
+.proyecto-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    perspective: 1000px;
+}

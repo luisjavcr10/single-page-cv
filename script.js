@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+uredocument.addEventListener('DOMContentLoaded', () => {
     // Manejo del formulario
     const formulario = document.getElementById('form-contacto');
     
@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // Simular envío exitoso
             formulario.reset();
             alert('¡Mensaje enviado con éxito!');
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
         });
     }
 
